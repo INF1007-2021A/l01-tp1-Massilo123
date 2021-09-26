@@ -2,12 +2,11 @@ import math
 
 
 def calculerPosition(positionInitiale, vitesseInitiale, duree, vitesseFinale):
-    # TODO faites les calculs intermediaires, vous pouvez initialiser des variables locales.
+    duree=duree/3600
+    positionInitiale=positionInitiale/1000
+    positionFinale = (((vitesseInitiale+vitesseFinale)*duree/2)+positionInitiale)
 
-    # TODO calculer la position finale, assigner la valeur à la variable "positionFinale"
-    positionFinale =
-
-    return positionFinale
+    return positionFinale*1000
 
 if __name__ == '__main__':
     positionInitiale = int(input("Entrez la position initiale en mètre: "))
